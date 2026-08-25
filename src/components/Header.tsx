@@ -3,7 +3,7 @@ import Link from "next/link";
 const navItems = [
   { label: "Arbeiten", href: "/#arbeiten" },
   { label: "Reel", href: "/#showreel" },
-  { label: "Lebenslauf", href: "/erik-falk-lebenslauf.pdf", download: true },
+  { label: "Lebenslauf", href: "/lebenslauf" },
   { label: "Kontakt", href: "/#kontakt" },
 ];
 
@@ -18,12 +18,7 @@ export default function Header() {
       </Link>
       <nav className="flex flex-wrap gap-x-6 gap-y-1 text-xs tracking-wide text-foreground">
         {navItems.map((item) => (
-          <a
-            key={item.label}
-            href={item.href}
-            download={item.download}
-            className="hover:text-muted transition-colors"
-          >
+          <a key={item.label} href={item.href} className="hover:text-muted transition-colors">
             {item.label.toUpperCase()}
           </a>
         ))}
