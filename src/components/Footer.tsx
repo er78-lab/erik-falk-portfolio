@@ -14,10 +14,10 @@ export default function Footer() {
       </div>
       <div className="flex flex-wrap gap-x-6 gap-y-2">
         <a
-          href="mailto:orangemuennich@gmail.com"
+          href="mailto:erik.falk.cgi@gmail.com"
           className="hover:text-foreground transition-colors"
         >
-          ORANGEMUENNICH@GMAIL.COM
+          ERIK.FALK.CGI@GMAIL.COM
         </a>
         <a href="tel:+4917622968556" className="hover:text-foreground transition-colors">
           0176 22 96 85 56

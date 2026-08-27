@@ -78,7 +78,7 @@ export default function LebenslaufPage() {
         <div className="flex flex-wrap items-start gap-6">
           <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-full bg-surface md:h-28 md:w-28">
             <Image
-              src="/images/erik-falk-portrait.png"
+              src="/images/erik-falk-portrait.jpg"
               alt="Erik Falk"
               fill
               sizes="112px"
