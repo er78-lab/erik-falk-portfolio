@@ -10,7 +10,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Erik Falk — Digital Creator, Art-Direction, 3d-Artist",
+  title: "Erik Falk — Digital Creator, Art-Director, 3D-Artist",
   description:
     "15+ Jahre Kommunikationsdesign, von klassischem 3D bis KI-Produktion. Technische Komplexität, starke Bilder — Automotive-Expertise mit Markengespür und strategischem Kopf.",
 };

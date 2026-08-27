@@ -6,7 +6,7 @@ export default function Footer() {
     >
       <div>
         <span className="font-semibold text-foreground">ERIK FALK</span>{" "}
-        <span className="hidden sm:inline">Digital Creator. Art-Direction. 3d-Artist.</span>
+        <span className="hidden sm:inline">Digital Creator. Art-Director. 3D-Artist.</span>
         <div className="mt-2 leading-relaxed">
           <div>Auf der Schanz 39</div>
           <div>71640 Ludwigsburg</div>

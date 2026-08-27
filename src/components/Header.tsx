@@ -13,7 +13,7 @@ export default function Header() {
       <Link href="/" className="flex items-baseline gap-3">
         <span className="text-sm font-semibold tracking-wide">ERIK FALK</span>
         <span className="hidden text-xs text-muted sm:inline">
-          Digital Creator. Art-Direction. 3d-Artist.
+          Digital Creator. Art-Director. 3D-Artist.
         </span>
       </Link>
       <nav className="flex flex-wrap gap-x-6 gap-y-1 text-xs tracking-wide text-foreground">
