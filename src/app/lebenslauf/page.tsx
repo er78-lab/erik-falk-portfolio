@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Lebenslauf — Erik Falk",
@@ -9,41 +10,55 @@ const experience = [
   {
     role: "Art Director",
     company: "polygrail GmbH, Stuttgart",
-    period: "2024 – heute",
+    period: "08/2024 – 05/2026",
     points: [
-      "Konzeption und Produktion von KI-generiertem Visual- und Videokontent für nationale und internationale Kunden",
-      "Entwicklung vollständiger KI-Kampagnen u. a. für Dethleffs, Mey Bodywear, Mercedes-Benz Trucks und Breuninger",
-      "Aufbau und Steuerung von KI-Workflows auf Basis von Seedance, Kling, Flux, Wan und Nano Banana",
-      "Pitchentwicklung und Kundenberatung zur strategischen KI-Integration in bestehende Kommunikationsprozesse",
+      "Konzeption und Produktion von 3D- und KI-generiertem Visual- und Videokontent für nationale und internationale Kunden",
+      "Gestaltung vollständiger KI-Kampagnen für Dethleffs, Leitz und Mey",
+      "Entwicklung automatisierter 3D-/KI-Compositing-Workflows",
+      "Maßgeblich zur Neukundengewinnung beigetragen (darunter Dethleffs, Uhlsport, Leitz) durch eigene Pitch- und Konzeptarbeit",
+    ],
+  },
+  {
+    role: "Senior 3D Artist / Art Director",
+    company: "unexpected GmbH, Stuttgart",
+    period: "10/2022 – 04/2024",
+    points: [
+      "Übernahme von Art-Direction-Verantwortung",
+      "Schwerpunkte: Konzeption, 3D-Grafik, CGI, Bildgestaltung",
+      "Umsetzung von Schlüsselbildern mit hochkomplexen technischen Inhalten, den sog. Metatopics für BOSCH BEG",
+      "Erstes vollständig umgesetztes Unreal Engine Projekt für Mercedes",
     ],
   },
   {
     role: "Senior 3D Artist",
-    company: "unexpected GmbH, Stuttgart",
-    period: "2006 – 2024",
+    company: "unexpected GmbH, Stuttgart (freiberuflich) · eigene Kunden, u. a. Carthago-Caravan, Bosch-Siemens Hausgeräte",
+    period: "01/2006 – 10/2022",
     points: [
-      "Langjährige Verantwortung für visuelle Kommunikation namhafter Kunden: Bosch Mobility, BMW, Mercedes-Benz, Porsche, Vector Informatik, Julius Blum GmbH u. v. m.",
-      "Entwicklung und Etablierung zentraler Kommunikationskonzepte für Bosch Mobility — u. a. Glasfahrzeuge, virtuelle Markenfahrzeuge, Weißwelt-Welt sowie eine unternehmensweite 3D-Produktdatenbank",
-      "CGI-Produktion für BMW-Fahrzeugreihen (2er, 3er, 5er, i4) sowie Mitarbeit am 300-Mio.-Euro-Pitch von BMW in Zusammenarbeit mit Mackevision/Accenture",
-      "Internationale Produktionen u. a. für Aiways, Roewe/SAIC, Weltmeister und Nio (in Kooperation mit Taylor James Ltd., USA)",
+      "Langjährige, kontinuierliche Zusammenarbeit mit unexpected und Verantwortung für die visuelle Kommunikation namhafter Kunden, darunter Bosch Mobility, Mercedes-Benz, BMW, Vector und Blum",
+      "Aufbau zentraler Kommunikationskonzepte für Bosch Mobility, darunter Glasfahrzeuge, markenneutrale Fahrzeuge, Bosch-Weißwelt",
+      "CGI-Produktion für BMW-Fahrzeugreihen sowie Mitarbeit am seinerzeit größten Pitch von BMW in Kooperation mit Mackevision/Accenture",
+      "Internationale Produktionen für Aiways, Roewe/SAIC, Weltmeister und Nio, in Kooperation mit der Agentur Taylor James Ltd. (USA)",
     ],
   },
   {
     role: "Kommunikationsdesigner Diplom (SFG)",
     company: "Freie Kunstschule Stuttgart (SFG)",
-    period: "2001 – 2005",
-    points: ["Schwerpunkte: Visuelle Kommunikation, Typografie, Konzeption und Gestaltung"],
+    period: "09/2001 – 06/2005",
+    points: [
+      "Schwerpunkte: Visuelle Kommunikation, Typografie, Logo-Entwicklung, Konzeption und Gestaltung, 3D-Visualisierung",
+    ],
   },
 ];
 
 const skills = [
-  "Autodesk 3ds-max",
-  "Adobe Photoshop",
+  "Autodesk 3ds Max",
   "Unreal Engine",
   "Blender",
+  "Adobe Photoshop",
   "Adobe Lightroom",
   "Adobe Illustrator",
-  "Adobe AfterEffects",
+  "Adobe After Effects",
+  "Adobe Premiere",
   "DaVinci Resolve",
 ];
 
@@ -59,23 +74,33 @@ export default function LebenslaufPage() {
         <span aria-hidden>←</span> ZUR STARTSEITE
       </Link>
 
-      <div className="flex flex-wrap items-end justify-between gap-6 border-b border-border pb-8">
-        <div>
-          <h1 className="text-3xl font-medium tracking-tight md:text-4xl">Erik Falk</h1>
-          <p className="mt-2 text-sm text-muted">
-            Digital Creator · Art Director · 3D &amp; KI Artist
-          </p>
-          <p className="mt-4 text-xs tracking-wide text-muted">
-            Ludwigsburg, Deutschland ·{" "}
-            <a
-              href="https://www.linkedin.com/in/erik-falk-011aab324"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-foreground"
-            >
-              LINKEDIN
-            </a>
-          </p>
+      <div className="flex flex-wrap items-start justify-between gap-8 border-b border-border pb-8">
+        <div className="flex flex-wrap items-start gap-6">
+          <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-full bg-surface md:h-28 md:w-28">
+            <Image
+              src="/images/erik-falk-portrait.png"
+              alt="Erik Falk"
+              fill
+              sizes="112px"
+              className="object-cover"
+            />
+          </div>
+          <div>
+            <h1 className="text-3xl font-medium tracking-tight md:text-4xl">Erik Falk</h1>
+            <p className="mt-2 text-sm text-muted">Digital Creator · Art Director · 3D-Artist</p>
+            <div className="mt-4 flex flex-col gap-1 text-xs tracking-wide text-muted">
+              <span>Ludwigsburg, Deutschland</span>
+              <a href="tel:+4917622968556" className="hover:text-foreground w-fit">
+                +49 176 22 96 85 56
+              </a>
+              <a
+                href="mailto:erik.falk.cgi@gmail.com"
+                className="hover:text-foreground w-fit"
+              >
+                erik.falk.cgi@gmail.com
+              </a>
+            </div>
+          </div>
         </div>
         <a
           href="/erik-falk-lebenslauf.pdf"
@@ -91,13 +116,20 @@ export default function LebenslaufPage() {
           <section>
             <h2 className="text-xs tracking-[0.2em] text-muted">PROFIL</h2>
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
-              Kommunikationsdesigner mit über 20 Jahren Erfahrung in der visuellen Kommunikation —
-              von klassischer 3D-Visualisierung bis zur vollständig KI-gestützten
-              Contentproduktion. Spezialist darin, technische Komplexität in starke,
-              verständliche Bildsprache zu übersetzen. Tiefe Automotive-Expertise kombiniert mit
-              einem ausgeprägten Gespür für Marken, Gestaltung und die Bedürfnisse des Kunden.
-              Kreativer Kopf mit strategischem Blick — und dem Handwerk, Ideen konsequent
-              umzusetzen.
+              Kommunikationsdesigner mit 20 Jahren Berufserfahrung. Ich produziere Content für
+              Industrie- und Automotive-Kunden mit klassischer 3D-Visualisierung ebenso wie in
+              Kombination mit KI-generierten Inhalten.
+            </p>
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
+              Ich übersetze komplexe Themen in eine klare Bildsprache. Produkte und Inhalte
+              inszeniere ich dabei auf höchstem gestalterischem Niveau. Kundenanforderungen
+              übertrage ich in ganzheitliche Konzepte und begleite den gesamten Prozess — von der
+              Idee über die handwerkliche Umsetzung bis zum finalen Content.
+            </p>
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
+              Im Team arbeite ich aktiv an einem konstruktiven Workflow, achte auf die besonderen
+              Fähigkeiten der Kollegen und integriere besonders gern neue Technologien so, dass
+              sie das Ergebnis optimieren und den Prozess vereinfachen.
             </p>
           </section>
 
