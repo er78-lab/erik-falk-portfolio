@@ -226,7 +226,7 @@ export const projects: Project[] = [
       "Es entstanden ai-generierte Models und Locations, die als Schauplätze professioneller Fotoshootings dienen: ein verträumtes, altes Grand-Hotel und eine alpine Jagdhütte in winterlicher Landschaft. So entstanden stimmungsvolle Bildwelten, die die Möglichkeiten ai-generierter Kampagnen aufzeigten.",
     ],
     headerImage: "/images/projekt08_mey_header.jpg",
-    gridImage: "/images/landingpage_08_mey.jpg",
+    gridImage: "/images/landingpage_08_mey_v0001.jpg",
     gallery: [
       { src: "/images/projekt08_mey_motiv01.jpg", span: "third" },
       { src: "/images/projekt08_mey_motiv02.jpg", span: "third" },
