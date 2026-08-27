@@ -275,11 +275,11 @@ export const projects: Project[] = [
     description: [
       "Der Film zeigt das Fahrzeug in einer reduzierten, architektonischen Kulisse, die den Fokus ganz auf Form und Proportion der A-Class L legt. Von Modeling über Licht bis zum finalen Rendering entstand der Film vollständig in 3ds-max, gerendert mit Vray.",
     ],
-    headerImage: "/images/projekt10_mercedes_a-class_header.jpg",
+    headerImage: "/images/projekt10_mercedes_a-class_header_v0001.jpg",
     gridImage: "/images/landingpage_10_mercedes_a-class.jpg",
     video: {
       src: "/videos/projekt10_mercedes_a-class.mp4",
-      poster: "/images/projekt10_mercedes_a-class_header.jpg",
+      poster: "/images/projekt10_mercedes_a-class_header_v0001.jpg",
       orientation: "landscape",
     },
     gallery: [
