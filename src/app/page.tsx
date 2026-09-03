@@ -20,7 +20,7 @@ export default function Home() {
           </p>
         </div>
         <VideoPlayer
-          src="/videos/showreel.mp4"
+          src="/videos/showreel_v0002.mp4"
           poster="/images/landingpage_showreel_screen_v0001.jpeg"
           label="PLAY SHOWREEL"
           className="self-center"
